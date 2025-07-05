@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapGallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>SnapGallery</h1>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+    </div>
+  </header>
+
+  <section class="gallery">
+    <div class="image" data-category="nature"><img src="images/nature1.jpg" alt="Nature 1"></div>
+    <div class="image" data-category="animals"><img src="images/animal1.jpg" alt="Animal 1"></div>
+    <div class="image" data-category="architecture"><img src="images/building1.jpg" alt="Building 1"></div>
+    <!-- Add more images as needed -->
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
